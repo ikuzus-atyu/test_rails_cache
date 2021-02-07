@@ -33,7 +33,8 @@ config/environments/development.rb
   config.action_controller.perform_caching = true
   config.cache_store = :redis_cache_store, {
     url: 'redis://127.0.0.1:6379/0/cache',
-    expires_in: 1.minutes, namespace: 'redis-dev'
+    expires_in: 1.minutes,
+    namespace: 'redis-dev'
   }
 ```
 
