@@ -68,5 +68,11 @@ config/environments/development.rb
   ```ruby
   $ bundle exec rails c
   > Rails.cache.read 'hoge'
-  => "foo"
+  => nil
   ```
+
+  ```bash
+  > get redis-dev:hoge
+  # $-1
+  ```
+ 
