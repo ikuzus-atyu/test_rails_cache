@@ -1,6 +1,8 @@
 
 # Railsでキャッシュ実装してみる
 
+今回はRedis使います！！！
+
 ## Railsのcache store
 
 | type | memo |
@@ -10,6 +12,7 @@
 | null | テストコード用保管しない |
 | memcached | 揮発型のKVS、軽いけど落ちるとデータ飛ぶ |
 | redis | レプリケーション、スナップショット可能<br>Rails 5.2 から対応 |
+
 
 ## Redis と mysql起動
 
