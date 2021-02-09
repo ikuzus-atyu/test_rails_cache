@@ -81,7 +81,7 @@ config/environments/development.rb
   ```ruby
   $ bundle exec rails c
   > Rails.cache.read 'hoge'
-  => "foo"
+  => nil
   ```
 
 
