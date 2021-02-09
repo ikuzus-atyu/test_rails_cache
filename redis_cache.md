@@ -25,10 +25,9 @@ $ sudo docker-compose up -d
 
 ## set up
 
-### rails install
-今回 javascript 使わないからwebpackerは除外
+### code clone
 ```
-rails new -d mysql --skip-webpack-install
+$ git clone https://github.com/ikuzus-atyu/test_rails_cache.git
 ```
 
 ### Gemfile 修正
@@ -36,6 +35,12 @@ redis追加
 
 ```ruby
 gem 'redis'
+```
+
+### bundle install
+今回 javascript 使わないからwebpackerは除外
+```
+bundle install
 ```
 
 ### Rails Cache の設定
@@ -88,7 +93,14 @@ config/environments/development.rb
   ```
 
 
-  ## DB vs cache
+## DB vs cache
+
+```bash
+$ mysql -h 127.0.0.1 -P3306 -u root -proot < ./jump_books.sql
+$ rails s
+```
+
+(アプリ起動)[http://localhost:3000/book]
 
   - DB access
     ```bash
