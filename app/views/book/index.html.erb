@@ -1,0 +1,19 @@
+
+<b>ジャンプコミックス</b>
+
+<table>
+  <tr>
+    <th>作品</th>
+    <th>作者</th>
+    <th>連載開始(年)</th>
+    <th>連載開始(号))</th>
+  </tr>
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.name %></td>
+      <td><%= book.author %></td>
+      <td><%= book.release %></td>
+      <td><%= book.volume %></td>
+    </tr>
+  <% end %>
+</table>
